@@ -16,7 +16,7 @@ const Navbar = () => {
             }>Dashboard</Link>
             <Link href="/transactions" className={
                 pathname === "/transactions" ? "text-primary font-bold" : "text-muted-foreground"
-            }>Dashboard</Link>
+            }>Transações</Link>
             <Link href="/subscription" className={
                 pathname === "/subscription" ? "text-primary font-bold" : "text-muted-foreground"
             }>Assinatura</Link>
