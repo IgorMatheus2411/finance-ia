@@ -12,6 +12,7 @@ import {
     depositsTotal: number;
     investmentsTotal: number;
     expensesTotal: number;
+    userCanAddTransaction?: boolean;
   }
   
   const SummaryCards = async ({
@@ -19,6 +20,7 @@ import {
     depositsTotal,
     expensesTotal,
     investmentsTotal,
+    userCanAddTransaction,
   }: SummaryCards) => {
     return (
       <div className="space-y-6">
@@ -29,6 +31,7 @@ import {
           title="Saldo"
           amount={balance}
           size="large"
+          userCanAddTransaction={userCanAddTransaction}
         />
   
         {/* OUTROS CARDS */}
